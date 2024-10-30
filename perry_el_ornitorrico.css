@@ -1,0 +1,186 @@
+body {
+    font-family: "Kalam", cursive;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: bold;
+    background-image: url(vivi.png);
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(173, 130, 140);
+  }
+  
+  .registro {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px 20px;
+    background-color: rgba(230, 199, 205, 0.815);
+    gap: 10px;
+    align-items: center;
+    border: 3px solid rgb(173, 130, 140, 0.815);
+    border-radius: 8px;
+  }
+  
+  #grillito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #chirimacha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .iniciarSesion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 45%;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    margin: 20px auto;
+  }
+  
+  .btn_regis {
+    width: 50%;
+    background-color: rgb(156, 162, 148);
+    border: 2px solid rgb(115, 104, 82);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Kalam", cursive;
+  }
+  
+  .input_regis {
+    width: 300px;
+    height: 30px;
+    font-family: "Kalam", cursive;
+  }
+  
+  input {
+    border-radius: 5px;
+    background-color: rgb(222, 239, 231, 0.815);
+    border: 2px solid rgb(166, 190, 174);
+    font-family: "Kalam", cursive;
+  }
+  
+  .botones_inicio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Kalam", cursive;
+  }
+  
+  .btn_login {
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(206, 170, 172);
+    border: 2px solid rgb(131, 105, 106);
+    font-family: "Kalam", cursive;
+  }
+  
+  .ala {
+    width: 250px;
+    padding: 10px;
+  }
+  
+  .input_login {
+    width: 100%;
+    background-color: rgb(222, 239, 231, 0.815);
+    border: 2px solid rgb(166, 190, 174);
+    padding: 10px;
+  }
+  .requisitos {
+    text-align: center;
+  }
+  
+  .carousel {
+    width: 30%;
+  }
+  .modal-content{
+    background-color: rgba(173, 130, 140, 0.822);
+  }
+  /* Adaptaciones para pantallas de 480px o menos */
+  @media (max-width: 560px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    .ala {
+      width: 150px;
+      padding: 3px;
+    }
+  
+    .iniciarSesion {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .input_login {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .registro {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .input_regis {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    main {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .carousel {
+      width: 100%;
+    }
+  
+    .btn_login, .btn_regis {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .botones_inicio {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .carousel {
+      width: 100%;
+    }
+  }

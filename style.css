@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Kalam", cursive;
+  background: rgba(176, 208, 208, 1);
+
+}
+
+header {
+    position: fixed;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(222, 239, 231);
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      z-index: 1000;
+}
+
+.head {
+  width: 30%;
+  margin: auto;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  color: rgb(81, 89, 66);
+  border: none;
+  background-color: rgb(222, 239, 231, 0);
+}
+
+.right{
+    display: flex;
+      justify-content: end;
+        align-items: center;
+}
+.logout {
+  display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.cerrar{
+    line-height: 15px;
+}
+
+.cuerpo {
+  width: 50%;
+    padding-top: 120px;
+    margin: auto;
+}
+
+.publicaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main {
+   margin-top: 100px;
+    margin: auto;
+}
+
+.ala {
+    height: 70px;
+    margin: auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.publicacion {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  background-color: rgb(107, 121, 98);
+  border-radius: 10px;
+  border: none;
+}
+
+.pensamiento{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+  border: 1.5px solid rgb(107, 121, 98);
+}
+
+.btn_publicar{
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 3px 8px;
+  font-family: monospace;
+  background-color: rgb(206, 170, 172);
+  font-weight: 600;
+  color: rgb(41, 39, 24);
+  cursor: pointer;
+}
+
+.yourself {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#fotoPerfil {
+  border-radius: 50%;
+  width: 80px;
+}
+
+p {
+  margin: 0;
+}
+
+.reaction {
+  color: rgb(206, 170, 172);
+  font-size: 21px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TQMchatGPT {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_user {
+  color:  rgb(206, 170, 172);
+  background-color: rgba(107, 121, 98, 0);
+  border: none;
+}
+
+.fotoPerfil_publi{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.diosmioyamateme{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+/* 😭*/
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icono {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(206, 170, 172);
+    background-color: rgb(222, 239, 231, 0);
+    border: none;
+}
+
+.like-section{
+    display: flex;
+    align-items: center;
+}
+
+.me_encorazona {
+    font-size: 20px;
+}
+
+.icono i {
+    pointer-events: none; /* Asegura que el ícono no interfiera con el clic del label */
+}
+
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+
+  /* Ajuste del header para dispositivos móviles */
+  header {
+      align-items: center;
+      padding: 5px;
+  }
+
+  .ala {
+      height: 40px;
+  }
+
+  .head {
+      width: 30%;
+      text-align: center;
+  }
+
+    .logout {
+      display: flex;
+      justify-content: end;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cerrar{
+        font-size: 15px;
+    }
+
+  /* Ajustar la vista principal */
+  main {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .cuerpo {
+      width: 90%;
+      padding-top: 80px;
+  }
+
+  .publicacion {
+      padding: 8px;
+      gap: 8px;
+  }
+
+  /* Ajustar el contenedor de publicaciones y elementos internos */
+  .publicaciones {
+      gap: 8px;
+  }
+
+  .btn_publicar {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .yourself {
+      gap: 8px;
+      align-items: center;
+  }
+
+  #fotoPerfil {
+      width: 50px;
+  }
+
+  /* Ajustes de las publicaciones */
+
+  .fotoPerfil_publi {
+      width: 40px;
+  }
+
+  .pensamiento {
+      font-size: 16px;
+  }
+
+  /* Ajuste para botones de usuario */
+  .btn_user {
+      font-size: 18px;
+  }
+
+  /* Ajustes de imagen y video en publicaciones */
+  .publicacion img, .publicacion video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
+    .iconos{
+        font-size: 20px;
+    }
+    #displayName{
+        display: none;
+    }
+}
