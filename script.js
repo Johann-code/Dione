@@ -355,7 +355,7 @@ async function cargarComentarios(publicacionId) {
 
 //Función para agregar un comentario a una publicación
 async function agregarComentario(publicacionId) {
-    const comentarioInput = document.createElement(`comentario-${publicacionId}`);
+    const comentarioInput = document.getElementById(`comentario-${publicacionId}`);
     const textoComentario = comentarioInput.value.trim();
 
     if (textoComentario !== "") {
@@ -372,5 +372,7 @@ async function agregarComentario(publicacionId) {
         } catch (error) {
             console.log("Error al agregar comentario: ", error);
         }        
-    }
+    } 
 }
+
+window.agregarComentario = agregarComentario;
