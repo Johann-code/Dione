@@ -353,7 +353,7 @@ async function cargarComentarios(publicacionId) {
     })
 }
 
-//Función para agregar un comentario a una publicación
+// Función para agregar un comentario a una publicación
 async function agregarComentario(publicacionId) {
     const comentarioInput = document.getElementById(`comentario-${publicacionId}`);
     const textoComentario = comentarioInput.value.trim();
@@ -364,15 +364,15 @@ async function agregarComentario(publicacionId) {
                 texto: textoComentario,
                 userId: idUsuario,
                 userName: auth.currentUser.displayName,
-                time: new Date()
+                timestamp: new Date()
             });
 
-            comentarioInput.value = ""; //Limpiar el campo de comentarios
-            cargarComentarios(publicacionId); //Recargar los comentarios
+            comentarioInput.value = ""; // Limpiar el campo de comentario
+            cargarComentarios(publicacionId); // Recargar los comentarios
         } catch (error) {
             console.log("Error al agregar comentario: ", error);
-        }        
-    } 
+        }
+    }
 }
 
 window.agregarComentario = agregarComentario;
