@@ -154,6 +154,11 @@ ${publicacion.imagenPublicacion ? `
             //"${publicacion.likes ? `
             //fa-solid fa-heart` : `fa-regular fa-heart`}"
 
+            contenido += `
+            <div class="comentarios" id="comentarios-${doc.id}"></div>
+            <textarea id="comentario-${doc.id}" placeholder="Escribe un comentario..."></textarea>
+            <button onclick="agregarComentario('${doc.id}')">Comentar</button>
+            `;
         
             publicacionDiv.innerHTML = contenido; // Asignar contenido al div
             publicacionesDiv.appendChild(publicacionDiv); // Agregar la publicación al contenedor
