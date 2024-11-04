@@ -307,8 +307,8 @@ window.darMeGusta = async function (postId) {
 
             // Actualizar el contador de "me gusta" en la interfaz
             document.getElementById(`likeCount-${postId}`).textContent = currentLikes - 1;
-            document.getElementById("kokoro").classList.remove('fa-solid');
-            document.getElementById("kokoro").classList.add('fa-regular');
+            // document.getElementById("kokoro").classList.remove('fa-solid');
+            // document.getElementById("kokoro").classList.add('fa-regular'); 
 
         } else {
             // Si no ha dado "me gusta", añadir el "me gusta"
@@ -319,8 +319,8 @@ window.darMeGusta = async function (postId) {
 
             // Actualizar el contador de "me gusta" en la interfaz
             document.getElementById(`likeCount-${postId}`).textContent = currentLikes + 1;
-            document.getElementById("kokoro").classList.remove('fa-regular');
-            document.getElementById("kokoro").classList.add('fa-solid');
+            // document.getElementById("kokoro").classList.remove('fa-regular');
+            // document.getElementById("kokoro").classList.add('fa-solid');
 
         }
     } catch (error) {
