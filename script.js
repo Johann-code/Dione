@@ -162,6 +162,9 @@ ${publicacion.imagenPublicacion ? `
         
             publicacionDiv.innerHTML = contenido; // Asignar contenido al div
             publicacionesDiv.appendChild(publicacionDiv); // Agregar la publicación al contenedor
+
+            //Cargar los comentarios de esta publicación
+            cargarComentarios(doc.id);
         });
     } catch (error) {
         console.error("Error al cargar publicaciones:", error);
