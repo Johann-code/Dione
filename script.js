@@ -335,3 +335,21 @@ window.darMeGusta = async function (postId) {
         console.error("Error al actualizar 'Me gusta':", error);
     }
 };
+
+//Función para cargar comentarios de una publicación
+async function cargarComentarios(publicacionId) {
+    const comentariosDiv = document.getElementById(`comentarios-${publicacionId}`);
+    comentariosDiv.innerHTML = ""; //Limpiar comentarios previos
+
+    const comentariosQuery = query(collection(db, "publicaciones", publicacionId, "comentarios"), orderBy("timestamp", "asc"));
+    const comentariosSnapshot = await getDocs(comentariosQuery);
+
+    comentariosSnapshot.forEach((doc) => {
+        const comentario = doc.data();
+        const comentarioDiv = document.createElement("div");
+        comentarioDiv.classList.add("comentario");
+        comentarioDiv.innerHTML = `<strong>${comentario.userName}:</strong> ${comentario.texto}`;
+        comentariosDiv.appendChild(comentarioDiv);
+    })
+    
+}
