@@ -351,5 +351,26 @@ async function cargarComentarios(publicacionId) {
         comentarioDiv.innerHTML = `<strong>${comentario.userName}:</strong> ${comentario.texto}`;
         comentariosDiv.appendChild(comentarioDiv);
     })
-    
+}
+
+//Función para agregar un comentario a una publicación
+async function agregarComentario(publicacionId) {
+    const comentarioInput = document.createElement(`comentario-${publicacionId}`);
+    const textoComentario = comentarioInput.value.trim();
+
+    if (textoComentario !== "") {
+        try {
+            await addDoc(collection(db, "publicaciones", publicacionId, "comentarios"), {
+                texto: textoComentario,
+                userId: idUsuario,
+                userName: auth.currentUser.displayName,
+                time: new Date()
+            });
+
+            comentarioInput.value = ""; //Limpiar el campo de comentarios
+            cargarComentarios(publicacionId); //Recargar los comentarios
+        } catch (error) {
+            console.log("Error al agregar comentario: ", error);
+        }        
+    }
 }
