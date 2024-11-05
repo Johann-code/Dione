@@ -1,7 +1,7 @@
 //IMPORTAR FIREBASE
 import './firebase.js';
 import { auth } from './firebase.js';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
 
 var formulario = document.getElementById("grillito");
 formulario.addEventListener("submit", (e) => {
