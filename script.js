@@ -32,7 +32,7 @@ onAuthStateChanged(auth, (usuario) => {
 
         // Recuperar la foto de perfil
         const fotoPerfil = document.getElementById("fotoPerfil");
-        fotoPerfil.src = usuario.photoURL || "perfil.jpeg"; // Foto por defecto
+        fotoPerfil.src = usuario.photoURL || "perfil.jpg"; // Foto por defecto
     } else {
         window.location.href = "login.html"; // Redirigir a la página de inicio de sesión
     }
