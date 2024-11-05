@@ -41,7 +41,7 @@ function grillito() {
 
                                 //Actualizar el nombre de usuario
                                 updateProfile(user, {
-                                    displayName: nombre
+                                    displayName: usuario
                                 }).then(() => {
                                     console.log("Se actualizó el nombre a " + user.displayName);
                                     //Redirigir a la página de inicio
