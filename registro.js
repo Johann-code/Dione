@@ -16,24 +16,24 @@ function grillito() {
     let contraseña = document.getElementById("topSecret").value;
     let comprobante = document.getElementById("clonSecret").value;
     if (usuario === "") {
-        console.log("primera etapa");
+        alert("Los datos deben estar completos.");
     } else {
         if (fecha_nacimiento === "") {
-            console.log("segunda etapa");
+            alert("Los datos deben estar completos.");
         } else {
             if (email === "") {
-                console.log("tercera etapa");
+                alert("Los datos deben estar completos.");
             } else {
                 if (contraseña === "") {
-                    console.log("cuarta etapa");
+                    alert("Los datos deben estar completos.");
                 } else {
                     if (comprobante === "") {
-                        console.log("quinta etapa");
+                        alert("Los datos deben estar completos.");
                     } else {
                         if (contraseña === comprobante) {
-                            alert("¡LO HICIMOS! ¡LO HICIMOS! ¡SIIIII!")
+                            console.log("Datos completos :D");
                         } else {
-                            console.log("final");
+                            alert("Has escrito mal la confirmación de contraseña")
                         }
                     }
                 }
@@ -44,7 +44,7 @@ function grillito() {
     //CREAR CORREO Y PASSWORD 
     createUserWithEmailAndPassword(auth, email, contraseña)
         .then((userCredential) => {
-            alert('Cuenta creada.');
+            alert('Cuenta creada con éxito. Inicia Sesión.');
             window.location.href = "index.html";
         })
         .catch((error) => {
