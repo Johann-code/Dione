@@ -18,6 +18,8 @@ function grillito() {
     // if (usuario === "") {
     //     alert("Los datos deben estar completos.");
     // } else {
+    
+    //Comprobación de datos
         if (email === "") {
             alert("Los datos deben estar completos.");
         } else {

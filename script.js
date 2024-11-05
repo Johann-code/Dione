@@ -156,8 +156,10 @@ ${publicacion.imagenPublicacion ? `
 
             contenido += `
             <div class="comentarios" id="comentarios-${doc.id}"></div>
-            <textarea id="comentario-${doc.id}" placeholder="Escribe un comentario..."></textarea>
-            <button onclick="agregarComentario('${doc.id}')">Comentar</button>
+            <div class="comentar">
+            <textarea id="comentario-${doc.id}" placeholder="Escribe un comentario..." class="jueves_de_pavita pensamiento"></textarea>
+            <button onclick="agregarComentario('${doc.id}')" class="icono"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
             `;
         
             publicacionDiv.innerHTML = contenido; // Asignar contenido al div

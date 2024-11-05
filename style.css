@@ -180,6 +180,18 @@ p {
     pointer-events: none; /* Asegura que el ícono no interfiera con el clic del label */
 }
 
+.comentar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+
+.jueves_de_pavita{
+  width: 90%;
+  height: 40px;
+}
+
 
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
