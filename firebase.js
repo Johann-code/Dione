@@ -12,15 +12,14 @@ import { getStorage } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCBgDRKqE6I-fYaRQDVksd3xeTekb-14uE",
-    authDomain: "amaryllis-5fc08.firebaseapp.com",
-    projectId: "amaryllis-5fc08",
-    storageBucket: "amaryllis-5fc08.appspot.com",
-    messagingSenderId: "297692895014",
-    appId: "1:297692895014:web:a1f59037a1563b94a293e7",
-    measurementId: "G-NETLCETYJM"
-};
-
+    apiKey: "AIzaSyBPbcYJsX7W-r45hdijy4-OgFgnz4ljsRk",
+    authDomain: "marimar-2b04c.firebaseapp.com",
+    projectId: "marimar-2b04c",
+    storageBucket: "marimar-2b04c.appspot.com",
+    messagingSenderId: "260334426937",
+    appId: "1:260334426937:web:8913e6dfd05ce154b066e8",
+    measurementId: "G-LE44PVR5VY"
+  };
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);

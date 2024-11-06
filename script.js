@@ -169,7 +169,7 @@ ${publicacion.imagenPublicacion ? `
             cargarComentarios(doc.id);
         });
     } catch (error) {
-        console.error("Error al cargar publicaciones:", error);
+        console.log("Error al cargar publicaciones:", error);
     }
 }
 
