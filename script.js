@@ -41,7 +41,7 @@ onAuthStateChanged(auth, (usuario) => {
 // Publicar nuevas publicaciones 
 //Publicar una nueva foto
 botonPublicar.addEventListener("click", async () => {
-    if (nuevaPublicacion.value.trim() !== "" || fotoPublicacion.files.length > 0) { //Verificar que
+    if (nuevaPublicacion.value.trim() !== "" || fotoPublicacion.files.length > 0 || videoPublicacion.files.length > 0) { //Verificar que
         try {
             let urlFoto = null;//Inicialmente sin foto
             let urlVideo = null;//Inicialmente sin video
